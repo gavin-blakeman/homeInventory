@@ -1,0 +1,51 @@
+; Map file for SAMAP application
+
+TABLE [tbl_maintenanceRecords] =
+	COLUMN [ID] =
+	COLUMN [PlantRegister_ID] = 
+	COLUMN [MaintenanceSchedule_ID] = 
+	COLUMN [MaintenanceDate] = 
+	COLUMN [WONumber] = 
+	COLUMN [MaintenanceDescription] = 
+	COLUMN [version] = 
+END
+
+TABLE [tbl_maintenanceSchedule] 
+	COLUMN [ID] =
+	MaintenanceStrategy_ID =
+	TaskDescription = 
+	TaskAbbreviation = 
+	TaskDetails = 
+	UsageValue =
+	Removed =
+	version =
+TABLEEND
+
+TABLESTART tbl_meterPointData =
+	ID = 
+	MeterPoint_ID =
+	MeterDate =
+	Value =
+TABLEEND
+
+TABLESTART tbl_meterPoints =	
+	PlantRegister_ID =
+	Description =
+	UOM_ID =
+	MinimumValue =
+	MaximumValue =
+	MaximumUsage =
+	Retired =
+	version =
+TABLEEND
+
+TABLESTART tbl_plantRegister =
+	ID = 
+	OperatingUnit_ID =
+	EquipmentClass_ID =
+	Identifier = 
+	Description =
+	Parent_ID =
+	Retired =
+	version =
+TABLEEND
